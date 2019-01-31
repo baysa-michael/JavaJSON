@@ -59,6 +59,8 @@ public class MasterController {
     private void initializeAppController() {
         this.myAppController.addCommand("Set", new SetHandler());
         this.myAppController.addCommand("Display", new DisplayHandler());
+        this.myAppController.addCommand("Save", new SaveHandler());
+        this.myAppController.addCommand("Load", new LoadHandler());
         this.myAppController.addCommand("Exit", new ExitHandler());
     }
 

@@ -17,6 +17,8 @@ public class WelcomeView {
             System.out.println("Please enter a keyword from the options below:");
             System.out.println("(Set)     Set Appointments");
             System.out.println("(Display) Display Appointments");
+            System.out.println("(Save)    Save Current Calendar to File");
+            System.out.println("(Load)    Load Calendar from File");
             System.out.println("(Exit)    Exit");
             System.out.print("Selection:  ");
 
@@ -28,6 +30,8 @@ public class WelcomeView {
             switch (response) {
                 case "Set":
                 case "Display":
+                case "Save":
+                case "Load":
                 case "Exit":
                     validInput = true;
                     break;
