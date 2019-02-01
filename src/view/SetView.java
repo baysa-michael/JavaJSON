@@ -26,9 +26,6 @@ public class SetView {
             System.out.print("DAY OF MONTH:  ");
             day = myScanner.nextInt();
 
-            // Adjust month to proper index
-            month--;
-
             // Confirm validity of input
             if(year >= -9999 && year <= 9999){
                 int maxDay;
@@ -67,6 +64,9 @@ public class SetView {
 
             }
         } while (!validDate);
+
+        // Adjust month to proper index
+        month--;
 
         // Convert to Gregorian Date
         GregorianCalendar gregDate = new GregorianCalendar(year, month, day);
